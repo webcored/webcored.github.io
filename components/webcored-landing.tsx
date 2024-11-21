@@ -249,7 +249,7 @@ export function WebcoredLanding() {
 
       {/* WhatsApp FAB Button */}
       <a
-        href="https://wa.me/1234567890"
+        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"

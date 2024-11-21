@@ -31,6 +31,8 @@ jobs:
         run: npm ci
       
       - name: Build with Next.js
+        env:
+          NEXT_PUBLIC_WHATSAPP_NUMBER: ${{ secrets.NEXT_PUBLIC_WHATSAPP_NUMBER }}
         run: npm run build
         
       - name: Add .nojekyll file
