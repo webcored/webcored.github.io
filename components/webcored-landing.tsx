@@ -268,7 +268,6 @@ function ServiceCard({ icon, title, description }: any) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover="hover"
-      initial="initial"
       variants={{
         initial: { scale: 1 },
         hover: { scale: 1.05 }
