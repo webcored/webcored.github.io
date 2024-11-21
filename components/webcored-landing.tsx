@@ -5,7 +5,9 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { ChevronDown, Code, Smartphone, Server, BotIcon as Robot, Clock, CheckCircle, Eye, Search, Cloud, Zap, Github, MessageCircle, TestTube } from 'lucide-react'
 
-export function WebcoredLanding() {
+export default function WebcoredLanding() {
+  console.log('WhatsApp Number:', process.env.NEXT_PUBLIC_WHATSAPP_NUMBER);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -249,7 +251,7 @@ export function WebcoredLanding() {
 
       {/* WhatsApp FAB Button */}
       <a
-        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '1234567890'}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
