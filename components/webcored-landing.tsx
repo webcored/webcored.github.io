@@ -5,9 +5,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { ChevronDown, Code, Smartphone, Server, BotIcon as Robot, Clock, CheckCircle, Eye, Search, Cloud, Zap, Github, MessageCircle, TestTube } from 'lucide-react'
 
-export default function WebcoredLanding() {
-  console.log('WhatsApp Number:', process.env.NEXT_PUBLIC_WHATSAPP_NUMBER);
-
+export function WebcoredLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
