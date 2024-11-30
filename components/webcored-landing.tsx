@@ -19,6 +19,9 @@ export function WebcoredLanding() {
             <a href="#process" className="text-white hover:text-yellow-300 transition-colors">Process</a>
             <a href="#projects" className="text-white hover:text-yellow-300 transition-colors">Projects</a>
             <a href="#contact" className="text-white hover:text-yellow-300 transition-colors">Contact</a>
+            <a href="https://github.com/webcored?utm_source=webcored.com" className="text-white hover:text-yellow-300 transition-colors" target="_blank">
+              <Github  />
+            </a>
           </div>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white" aria-label="Toggle menu">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
